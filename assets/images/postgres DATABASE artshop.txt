@@ -1,0 +1,25 @@
+postgres=# CREATE DATABASE artshop;                                                                                                                                  
+CREATE DATABASE                                                                                                                                                      
+postgres=# \c artshop;                                                                                                                                               
+Вы подключены к базе данных "artshop" как пользователь "postgres".                                                                                                   
+
+artshop=# CREATE TABLE users (id SERIAL PRIMARY KEY, surname varchar, name varchar, patronymic varchar, login varchar, password varchar, avatar text, type varchar); 
+CREATE TABLE                                                                                                                                                         
+artshop=# \dt  
+
+artshop=# \select * from users;                                                                                                                                      
+неверная команда \select                                                                                                                                             
+Введите \? для получения справки.                                                                                                                                    
+artshop=# select * from users;                                                                                                                                       
+ id | surname | name | patronymic | login | password | avatar | type                                                                                                 
+----+---------+------+------------+-------+----------+--------+------                                                                                                
+(0 строк)                                                                                                                                                            
+                                                                                                                                                                     
+                                                                                                                                                                     
+artshop=# CREATE TABLE products (id SERIAL PRIMARY KEY, title varchar, year integer, author varchar, description varchar, price varchar, count varchar, cover text); 
+CREATE TABLE                                                                                                                                                         
+artshop=# select * from products;                                                                                                                                    
+ id | title | year | author | description | price | count | cover                                                                                                    
+----+-------+------+--------+-------------+-------+-------+-------                                                                                                   
+(0 строк)                                                                                                                                                            
+                                                                                                                                                      
