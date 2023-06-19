@@ -20,6 +20,8 @@ $products = select('SELECT * FROM products');
                 <div class="item">
                     <img src="data:image/jpeg;base64,<?php echo $product['cover']?>" alt="">
                     <h3><?php echo $product['title']?></h3>
+                    <h3><?php echo $product['year']?></h3>
+                    <h3><?php echo $product['author']?></h3>
                     <p><?php echo $product['description']?></p>
                     <div class="more">
                         <span><?php echo $product['price']?></span>

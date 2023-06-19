@@ -13,7 +13,9 @@ session_start();
     <body>
         <span onclick="history.back()">Назад</span>
         <form action="../php/add_product.php" method="post" enctype="multipart/form-data">
-            <input type="text" name="title" placeholder="Название товара:" required>
+            <input type="text" name="title" placeholder="Название картины:" required>
+            <input type="text" name="year" placeholder="Год создания:" required>
+            <input type="text" name="author" placeholder="Укажите автора:" required>
             <textarea name="desc" id="" cols="40" rows="15" placeholder="Напишите описание" required></textarea>
             <input type="number" name="price" placeholder="Укажите цену:" required>
             <input type="number" name="count" placeholder="Укажите количество товара:" required>

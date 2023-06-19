@@ -11,16 +11,6 @@ session_start();
         <title>Главная</title>
     </head>
     <body>
-        <header>
-            <div class="container">
-                <a href="#"><img class="logo" src="assets/images/Logo1.png" alt="logo"></a>
-                <form method="get">
-                    <input type="text" placeholder="Поиск">
-                    <input type="submit" value="Найти">
-                </form>
-                <a href="./pages/login.php"><img class="auth" src="assets/images/avatar1.png" alt="profile"></a>
-            </div>
-        </header>
         <?php require './moduls/header.php';?>
     </body>
 </html>
