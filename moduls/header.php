@@ -16,20 +16,20 @@
         else:
             echo './pages/add_product.php';
         endif; ?>">Добавить товар</a>
-<!--    </nav>-->
-    <a href="<?php if (!empty($_SESSION['user_id'])):
-        if ($_SERVER['REQUEST_URI'] !='/'):
-            echo './profile.php?id='.$_SESSION['user_id'];
+
+        <a href="<?php if (!empty($_SESSION['user_id'])):
+            if ($_SERVER['REQUEST_URI'] !='/'):
+                echo './profile.php?id='.$_SESSION['user_id'];
+            else:
+                echo './pages/profile.php?id='.$_SESSION['user_id'];
+            endif;
         else:
-            echo './pages/profile.php?id='.$_SESSION['user_id'];
-        endif;
-    else:
-        if ($_SERVER['REQUEST_URI'] !='/'):
-            echo './auth.php';
-        else:
-            echo './pages/auth.php';
-        endif;
-    endif;?>">
-        <img class src="assets/images/avatar1.png" alt="profile">
-    </a>
+            if ($_SERVER['REQUEST_URI'] !='/'):
+                echo './auth.php';
+            else:
+                echo './pages/auth.php';
+            endif;
+        endif;?>">
+            <img class src="assets/images/avatar1.png" alt="profile">
+        </a>
 </header>

@@ -14,13 +14,14 @@
 }
 .item{
     width: 250px;
-    height: 200px;
+    height: 400px;
     padding: 10px;
     font-family:'Arial' sans-serif;
+    border: 1px solid #1a1a1a;
 }
 .item img{
     width: 100%;
-    height: 36%;
+    height: 100px;
     background: #000;
     border-radius: 5px;
 }

@@ -12,44 +12,91 @@ $item = select('SELECT * FROM products WHERE id = :id',['id' => $_GET['id']]);
     <title><?php echo $item[0]['title'] ?></title>
 </head>
 <body>
-<?php require "../modules/header.php"?>
+<?php require "../moduls/header.php"?>
 <div class="item">
     <img class="img" src="data:image/png;base64,<?= $item[0]['cover'] ?>" alt="">
-    <span class="price"><?= $item[0]['price'] ?></span>
-    <h2 class="title"><?= $item[0]['title'] ?></h2>
-    <span class="desc"><?= $item[0]['description'] ?></span>
-    <pre class="count"><?= $item[0]['count'] ?></pre>
+    <span class="price">Цена, ₽: <?= $item[0]['price'] ?></span>
+    <span class="title">Название: <b><?= $item[0]['title'] ?></b></span>
+    <span class="year">Год создания: <b><?= $item[0]['year'] ?></b></span>
+    <span class="author">Автор: <b><?= $item[0]['author'] ?></b></span>
+    <span class="desc">Описание: <i><?= $item[0]['description'] ?></i></span>
+    <pre class="count">Количество: <b><?= $item[0]['count'] ?></b></pre>
     <form class="btn" action="../php/add_cart.php" method="post">
-        <input type="text" value="<?php echo $_GET['id'] ?>" name="id_item" style="display: none">
-        <input type="submit" value="Купить">
+        <input class="btn_sub" type="text" value="<?php echo $_GET['id'] ?>" name="id_item" style="display: none">
+        <input class="btn_name" type="submit" value="Купить">
     </form>
 </div>
 <style>
     .item{
         display: grid;
-        width: 1200px;
-        margin: 0 auto;
-        grid-template-areas: "img title" "img desc" "img count" "price btn";
+        width: 800px;
+        margin: 20px auto;
+        font-family: 'Arial', sans-serif;
+        grid-template-areas: "img title" "img year" "img author" "img desc" "img count" "price btn";
     }
     .img{
         grid-area: img;
-        background: gray;
+        background: #cecdcd;
         max-width: 250px;
+        border: 10px double rgba(98, 86, 71, 0.75);
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
     }
     .price{
+        margin-top: 20px;
         grid-area: price;
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: 20px;
     }
     .title{
         grid-area: title;
+        font-size: 24px;
+        color: #04047AFF;
+    }
+    .year{
+        grid-area: year;
+        font-size: 20px;
+    }
+    .author{
+        grid-area: author;
+        font-size: 20px;
     }
     .desc{
         grid-area: desc;
+        font-size: 20px;
     }
     .count{
         grid-area: count;
+        font-size: 20px;
+        font-family: 'Arial', sans-serif;
     }
     .btn{
         grid-area: btn;
+        text-align: center;
+        /*height: 40px;*/
+        /*width: 80px;*/
+        /*color: green;*/
+
+    }
+    /*.btn_sub{*/
+    /*color: green;*/
+    /*}*/
+    .btn_name{
+        font-size: 15px;
+        font-weight: 700;
+        height: 40px;
+        width: 100px;
+        color: #625647BF;
+        border: 2px solid #625647BF;
+        border-radius: 5px;
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+    }
+    .btn_name:active,
+    .btn_name:hover{
+        background: #3b3bbb;
+        color: white;
+        border: 1px solid #3b3bbb;
+        transition: .3s;
     }
 </style>
 </body>

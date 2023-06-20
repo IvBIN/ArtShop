@@ -5,4 +5,7 @@ header{
     width: 1200px;
     margin: 0 auto;
     height: 70px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+    color: aqua;
+    border-bottom: black;
 }

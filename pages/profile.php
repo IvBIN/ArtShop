@@ -34,6 +34,7 @@ $item = select('SELECT * FROM cart WHERE id_user = :id', ['id' => $_GET['id']]);
                     </form>
                 </div>
                 <div class="cart">
+                    <span class="cart_info">Вами приобретено:</span><br>
                     <?php if (!empty($item)){
                         foreach ($item as $prod){
                             echo select('SELECT title FROM products WHERE id = :item_id', ['item_id'=>$prod['id_item']])[0]['title'];
