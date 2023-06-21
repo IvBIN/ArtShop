@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 .container{
     width: 1200px;
@@ -15,25 +16,31 @@
 .item{
     width: 250px;
     height: 400px;
+    margin-top: 15px;
     padding: 10px;
-    font-family:'Arial' sans-serif;
-    border: 1px solid #1a1a1a;
+    font-family:'Arial', sans-serif;
+    /*border: 1px solid #1a1a1a;*/
+    background: #D3C6CDF4;
+    border-radius: 5px;
 }
 .item img{
     width: 100%;
-    height: 100px;
+    height: 200px;
+    object-fit: cover;
     background: #000;
     border-radius: 5px;
 }
 .item h3{
-    margin: 5px 0;
-    font-size: 24px;
+    margin: 2px 0;
+    font-size: 20px;
+    font-family: "Roboto Light"
 }
 .item p{
     margin-bottom: 10px;
-    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
     text-overflow: ellipsis;
-    height: 19%;
+    height: 10%;
     overflow: hidden;
 }
 .more{
@@ -41,10 +48,22 @@
     justify-content: space-between;
     align-items: center;
 }
+.more_price{
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+}
 .more a{
-    color: black;
+    color: #653c3c;
     text-decoration: none;
     padding: 7px 10px;
-    border: 1px solid black;
+    border: 1px solid #653c3c;
     border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #C9AFBDF4;
+}
+.more a:active,
+.more a:hover{
+    color: #EAE5E7F4;
+    background: #9660B4FF;
 }

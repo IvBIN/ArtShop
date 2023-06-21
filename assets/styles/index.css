@@ -3,22 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
-    width: 100%;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
-    /*display: block;*/
-    /*background: aqua;*/
+/*header{*/
+/*    width: 100%;*/
+/*    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);*/
+/*    !*display: block;*!*/
+/*    !*background: aqua;*!*/
 
-}
-header .container{
-    width: 1200px;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0  auto;
-    /*background: aqua;*/
-
-}
-.logo{
-    height: 50px;
+/*}*/

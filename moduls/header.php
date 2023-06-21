@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../assets/styles/header.css">
 <header>
-
-        <a href="<?php if ($_SERVER['REQUEST_URI'] !='/'): echo '../'; else: echo './'; endif; ?>"><img class="logo" src="assets/images/Logo1.png" alt="logo"></a>
+    <div class="container">
+        <a href="<?php if ($_SERVER['REQUEST_URI'] !='/'): echo '../'; else: echo './'; endif; ?>"><img class="logo" src="../assets/images/Logo1.png" alt="logo"></a>
         <form method="get">
             <input type="text" placeholder="Поиск">
             <input type="submit" value="Найти">
@@ -30,6 +30,7 @@
                 echo './pages/auth.php';
             endif;
         endif;?>">
-            <img class src="assets/images/avatar1.png" alt="profile">
+            <img class="profile" src="../assets/images/avatar11.png" alt="profile">
         </a>
+    </div>
 </header>

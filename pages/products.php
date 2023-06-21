@@ -24,7 +24,7 @@ $products = select('SELECT * FROM products');
                     <h3><?php echo $product['author']?></h3>
                     <p><?php echo $product['description']?></p>
                     <div class="more">
-                        <span><?php echo $product['price']?></span>
+                        <span class="more_price">Цена,₽:<br><b><?php echo $product['price']?></b></span>
                         <a href="./item.php?id=<?php echo $product['id']?>">Узнать больше</a>
                     </div>
                 </div>
