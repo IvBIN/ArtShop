@@ -86,16 +86,17 @@ $item = select('SELECT * FROM products WHERE id = :id',['id' => $_GET['id']]);
         font-weight: 700;
         height: 40px;
         width: 100px;
-        color: #625647BF;
-        border: 2px solid #625647BF;
+        color: darkmagenta;
+        border: 2px solid darkmagenta;
         border-radius: 5px;
         box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+        background: #C9AFBDF4;
     }
     .btn_name:active,
     .btn_name:hover{
-        background: #3b3bbb;
+        background: #9660B4FF;
         color: white;
-        border: 1px solid #3b3bbb;
+        border: 1px solid #9660B4FF;
         transition: .3s;
     }
 </style>

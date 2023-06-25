@@ -22,6 +22,7 @@
     /*border: 1px solid #1a1a1a;*/
     background: #D3C6CDF4;
     border-radius: 5px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
 }
 .item img{
     width: 100%;
@@ -56,7 +57,7 @@
     color: #653c3c;
     text-decoration: none;
     padding: 7px 10px;
-    border: 1px solid #653c3c;
+    /*border: 1px solid #C9AFBDF4;*/
     border-radius: 50px;
     font-size: 15px;
     font-weight: 600;
@@ -66,4 +67,5 @@
 .more a:hover{
     color: #EAE5E7F4;
     background: #9660B4FF;
+
 }

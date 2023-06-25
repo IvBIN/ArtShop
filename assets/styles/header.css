@@ -1,3 +1,4 @@
+
 header{
     height: 70px;
     /*box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);*/
@@ -19,12 +20,74 @@ header .container{
     /*background: aqua;*/
 
 }
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}
 .logo{
     height: 50px;
     margin-left: 10px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 }
 .profile{
     margin-right: 10px;
     color: darkmagenta;
 }
+/*.search{*/
+/*    height: 20px;*/
+/*    border: 1pz solid rebeccapurple;*/
+/*    color: aqua;*/
+/*}*/
+
+.search form {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height: 20px;
+    /*margin: calc(259px / 2 - 65px / 4 - 130px / 2) 0;*/
+}
+.search form input[type="text"] {
+    width: calc(100% - 50px);
+    padding-left: 5px;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+}
+
+.search form input[type="submit"] {
+    width: 50px;
+    color: white;
+    background: linear-gradient(90deg, #fe8464, #fe6e9a);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.products,
+.add_product{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rebeccapurple;
+    text-decoration: none;
+    display: block;
+    width: auto;
+    height: auto;
+    /*border: 1px solid black;*/
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.products:active,
+.products:hover,
+.add_product:active,
+.add_product:hover{
+    color: #C9AFBDF4;
+    background: rebeccapurple;
+    transition: .5s;
+}
+
+
+
