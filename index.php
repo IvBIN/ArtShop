@@ -33,8 +33,49 @@ session_start();
                     Кроме глубокого познания себя, изобразительное искусство дает человеку возможность самовыражаться, мыслить и творить.<br>
                     Поэтому так важно приобщаться к этому виду изобразительного искусства: смотреть на картины великих художников, активно посещать художественные музеи, в которых выставлены работы современных мастеров, а также создавать картины самим.
                 </div>
-                <img src="../assets/images/v_gallery.jpg" alt="v_gallery">
+                <img src="./assets/images/v_gallery.jpg" alt="v_gallery">
             </div>
+        </div>
+        <div class="partners">
+            <div class="container">
+                <h1>Наши партнеры</h1>
+                <div class="logo_partner">
+                    <img src="./assets/images/avatar01.png" alt="partner01">
+                    <img src="./assets/images/avatar01.png" alt="partner02">
+                    <img src="./assets/images/avatar01.png" alt="partner03">
+                    <img src="./assets/images/avatar01.png" alt="partner04">
+                    <img src="./assets/images/avatar01.png" alt="partner05">
+                </div>
+            </div>
+        </div>
+        <div class="opinion_block">
+            <div class="container">
+                <div class="opinions">
+                    <div class="opinion">
+                        <img src="#" alt="avatar_1">
+                        <h3>Имя владельца</h3>
+                        <h3>Статус</h3>
+                        <span>Отзыв Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate debitis expedita facilis nobis repellat voluptatem.</span>
+                    </div>
+                    <div class="opinion">
+                        <img src="#" alt="avatar_1">
+                        <h3>Имя владельца</h3>
+                        <h3>Статус</h3>
+                        <span>Отзыв Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate debitis expedita facilis nobis repellat voluptatem.</span>
+                    </div>
+                    <div class="opinion">
+                        <img src="#" alt="avatar_1">
+                        <h3Имя владельца</h1>
+                        <h3>Статус</h3>
+                        <span>Отзыв Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate debitis expedita facilis nobis repellat voluptatem.</span>
+                    </div>
+                    <div class="opinion">
+                        <img src="#" alt="avatar_1">
+                        <h3Имя владельца</h1>
+                        <h3>Статус</h3>
+                        <span>Отзыв Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate debitis expedita facilis nobis repellat voluptatem.</span>
+                    </div>
+                </div>3            </div>
         </div>
 
     </body>
