@@ -33,6 +33,7 @@ session_start();
             textarea {
                 resize: none;
             }
+
         </style>
     </body>
 </html>

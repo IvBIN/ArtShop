@@ -39,33 +39,36 @@ header .container{
 /*    color: aqua;*/
 /*}*/
 
-.search form {
+.search {
     display: flex;
     justify-content: space-around;
     width: 200px;
     height: 20px;
     /*margin: calc(259px / 2 - 65px / 4 - 130px / 2) 0;*/
 }
-.search form input[type="text"] {
+.search input[type="text"] {
     width: calc(100% - 50px);
     padding-left: 5px;
     outline: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: none;
+    border: 1px solid rebeccapurple;
 }
 
-.search form input[type="submit"] {
+.search input[type="submit"] {
     width: 50px;
     color: white;
-    background: linear-gradient(90deg, #fe8464, #fe6e9a);
+    background: linear-gradient(180deg, #C9AFBDF4, rebeccapurple);
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+
 }
 
 .products,
-.add_product{
+.add_product,
+.contact {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -83,7 +86,9 @@ header .container{
 .products:active,
 .products:hover,
 .add_product:active,
-.add_product:hover{
+.add_product:hover,
+.contact:active,
+.contact:hover{
     color: #C9AFBDF4;
     background: rebeccapurple;
     transition: .5s;

@@ -29,10 +29,25 @@ $item = select('SELECT * FROM products WHERE id = :id',['id' => $_GET['id']]);
 <style>
     .item{
         display: grid;
-        width: 800px;
+        width: 1150px;
         margin: 20px auto;
         font-family: 'Arial', sans-serif;
         grid-template-areas: "img title" "img year" "img author" "img desc" "img count" "price btn";
+        /*background: #deb5f1;*/
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        border-radius: 5px;
+
+        background-color: #DEB5F1FF;
+        background-image: -webkit-repeating-radial-gradient(circle,
+        #e6d3b4, #d0a2e7 50%, #DEB5F1FF 100%
+        );
+        background-image: repeating-radial-gradient(circle,
+        #e6d3b4, #D0A2E7FF 50%, #DEB5F1FF 100%
+        );
+        background-size: 10px 10px;
+
     }
     .img{
         grid-area: img;
@@ -90,7 +105,7 @@ $item = select('SELECT * FROM products WHERE id = :id',['id' => $_GET['id']]);
         border: 2px solid darkmagenta;
         border-radius: 5px;
         box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
-        background: #C9AFBDF4;
+        background: #EED2E0F4;
     }
     .btn_name:active,
     .btn_name:hover{

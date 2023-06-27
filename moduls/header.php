@@ -16,7 +16,7 @@
         else:
             echo './pages/add_product.php';
         endif; ?>" class="add_product">Добавить товар</a>
-
+        <a href="#" class="contact">Контакты</a>
         <a href="<?php if (!empty($_SESSION['user_id'])):
             if ($_SERVER['REQUEST_URI'] !='/'):
                 echo './profile.php?id='.$_SESSION['user_id'];
